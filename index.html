@@ -30,14 +30,38 @@
     <body>
         <!-- header start -->
         <header>
-            <ul id="menu">
+        <!--     <ul id="menu">
                 <li data-menuanchor="Home"><a href="#Home">Home</a></li>
                 <li data-menuanchor="AboutUs"><a href="#AboutUs">About Us</a></li>
                 <li data-menuanchor="TheChef"><a href="#TheChef">The Chef</a></li>
                  <li data-menuanchor="Menu"><a href="#Menu">Menu</a></li>
                 <li data-menuanchor="Opening"><a href="#Opening">Opening Hours</a></li>
                 <li data-menuanchor="Contact"><a href="#Contact">CONTACT</a></li>
-            </ul>
+            </ul> -->
+            <nav class="navbar   navbar-expand-lg ">
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-block">
+        <ul class="navbar-nav justify-content-end d-block" id="menu">
+          <li data-menuanchor="Home"><a href="#Home">Home</a></li>
+                <li data-menuanchor="AboutUs"><a href="#AboutUs" >About Us</a></li>
+                <li data-menuanchor="TheChef"><a href="#TheChef" >The Chef</a></li>
+                 <li data-menuanchor="Menu"><a href="#Menu" >Menu</a></li>
+                <li data-menuanchor="Opening"><a href="#Opening" >Opening Hours</a></li>
+                <li data-menuanchor="Contact"><a href="#Contact" >CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+
+</nav>
         </header>
         <!-- header end -->
         <div class="right-social fixed-end">
@@ -53,7 +77,8 @@
         <div id="fullpage">
             <div class="section active" id="home">
                 <div class="container text-center" data-aos-duration="1200" data-aos-easing="ease-in-sine" data-aos="fade-down">
-                    <img src="assests/images/logo.png" alt="">
+                    <div class="home-inner">
+                        <img src="assests/images/logo.png" alt="">
                     <h2 >Welcome to our</h2>
                     <h1>Restaurant</h1>
                     <p class="text-uppercase">the best Multi Cuisine Restaurant</p>
@@ -61,11 +86,13 @@
                         <li><a href="">Book Table </a></li>
                         <li><a href="">View Menu </a></li>
                     </ul>
+                    </div>
                 </div>
             </div>
             <div class="section " id="about">
                 <div class="container">
-                    <!-- row start -->
+                    <div class="about-wrapp">
+                        <!-- row start -->
                     <div class="row">
                         <!-- single item start -->
                         <div class="col-lg-7 align-self-center">
@@ -97,6 +124,7 @@
 
                     </div>
                     <!-- row end -->
+                    </div>
                 </div>
 
             </div>
@@ -128,7 +156,7 @@
                             </div>
                             <!-- single item end -->
                             <!-- single item start -->
-                            <div class="col-lg-4">
+                            <div class="col-lg-4  mt-lg-0 mt-5">
                                 <div class="item shadow" data-aos-offset="0" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos="fade-left">
                                     <img src="assests/images/user.jpg" alt="img" class="img-fluid">
                                     <div class="box-text">
@@ -154,7 +182,8 @@
             <div class="section" id="menu-list">
                 <!-- OUR MENUS start -->
                 <div class="container">
-                    <div class="top-box text-center" data-aos-offset="0" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos="fade-down">
+                    <div class="menu-wrapper">
+                        <div class="top-box text-center" data-aos-offset="0" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos="fade-down">
                         <h2>Our Incredible Food</h2>
                         <p>Tasty & Fresh</p>
                     </div>
@@ -174,7 +203,7 @@
                             </div>
                             <!-- single item end -->
                             <!-- single item start -->
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 mt-04">
                                 <div class="media justify-content-between">
                                     <div class="media-body">
                                         <h4>Salmon Aburi (4 pcs)</h4>
@@ -233,6 +262,7 @@
                         <!-- row end -->
                     </div>
                     </div>
+                    </div>
                 </div>
                 <!-- OUR MENUS end -->
             </div>
@@ -279,7 +309,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-8 align-self-center" data-aos-offset="0" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos="fade-left">
+                            <div class="col-lg-8 align-self-center  mt-lg-0 mt-5" data-aos-offset="0" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos="fade-left">
                                 <div class="item-right">
                                     <div class="row">
                                         <div class="col-6">
@@ -313,7 +343,7 @@
                             </div>
                             <!-- single item end -->
                             <!-- single item start -->
-                            <div class="col-lg-4">
+                            <div class="col-lg-4  mt-lg-0 mt-5">
                                 <div class="mid-item" data-aos-offset="0" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos="fade-down">
                                     <img src="assests/images/logo.png" alt="img" class="img-fluid">
                                     <ul class="d-flex justify-content-center">
@@ -327,7 +357,7 @@
                             <!-- single item end -->
 
                              <!-- single item start -->
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 mt-lg-0 mt-5">
                                 <div class="item-google" data-aos-offset="0" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos="fade-left">
                                     <div class="google-map ratio ratio-16x9">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805196.5106799493!2d144.49266899075678!3d-37.970153973203324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sro!4v1652720589921!5m2!1sen!2sro" width="300" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
@@ -366,7 +396,7 @@
                 slidesNavigation: true,
                 lazyLoad: true,
                 licenseKey: 'i getted a license',
-                // css3:true,
+                css3:false,
                 responsiveWidth: 1024,
                 scrollingSpeed: 1050,
                 credits: {enabled: false},
@@ -385,6 +415,11 @@
     }
 
             });
+        </script>
+           <script>
+$("header .offcanvas").click(function(){
+    $('.offcanvas').offcanvas('hide');
+});
         </script>
     </body>
     </html>

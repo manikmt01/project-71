@@ -1,25 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 :root {
-/* Colors: */
---color-000000: #000000;
---color-707070: #707070;
-
 /* Font/text values */
 --font-Allura:'Allura', cursive;
 --font-Poppins:'Poppins', sans-serif;
---font-style-normal: normal;
---font-weight-300: 300;
---font-size-7: 7px;
---font-size-10: 10px;
---font-size-11: 11px;
---font-size-12: 12px;
---font-size-14: 14px;
---font-size-16: 16px;
---font-size-40: 40px;
---character-spacing-0: 0px;
---line-spacing-9: 9px;
---line-spacing-16: 16px;
---line-spacing-50: 50px;
 }
 .container {
     max-width: 1150px;
@@ -81,16 +64,43 @@ header {
     z-index: 999;
 }
 header ul {
-    width: 150px;
+    width: 120px;
     padding: 15px;
+    text-align: center;
 }
 header ul li{
     margin-bottom: 15px;
+    position: relative;
+    transition: all ease .6s;
+}
+header ul li::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    width: 40px;
+    height: 2px;
+    border-bottom: 2px solid #fff;
+    z-index: 9;
+    bottom: -4px;
+    margin: auto;
+    opacity: 0;
+    transition: all ease .6s;
+}
+header ul li:hover a{
+    color: #ddb150;
+    transition: all ease .6s;
+}
+header ul li:hover::before,
+header ul li.active::before{
+   opacity: 1;
+   transition: all ease .6s;
 }
 header ul li a {
     color: #ddb150;
     font-weight: 500;
     font-size: 12px;
+    transition: all ease .6s;
 }
 
 
@@ -337,8 +347,11 @@ header ul li a {
     border-radius: 10px;
     width: 100%;
     max-width: 90%;
+    margin: 0 auto;
 }
-#the-chef .box .item img{}
+#the-chef .box .item img {
+    border-radius: 10px 10px 0 0;
+}
 #the-chef .box .item .box-text {
     padding: 15px;
 }
@@ -493,6 +506,7 @@ header ul li a {
     opacity: .4;
     z-index: -1;
 }
+#menu-list .menu-wrapper{}
 #menu-list .box{
     padding: 20px;
     border: 1px solid #fff;
